@@ -1,0 +1,117 @@
+
+// 1. a) Write a constructor for the class Movie, which takes a String representing the title of the movie, 
+// a String representing the studio, and a String representing the rating as its arguments, and sets the 
+// respective class properties to these values.
+
+class movie {
+  constructor(title, studio, rating) {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+
+  getrating() {
+    return "the rating is  " + this.rating;
+  }
+}
+
+
+// b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+ 
+class movie {
+    constructor(title, studio, rating){
+        this.title = title;
+        this.studio = studio;
+        this.rating = "PG";
+    }
+}
+
+// d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”,
+// the studio “Eon Productions”, and the rating “PG­13”
+
+const CasinoRoyale = new movie( "Casino Royal", "Eon Productions", "PG13");d).
+
+Movie mov = new Movie(“Casino Royale”,”Eon
+ Productions”,”PG-13”);
+
+
+C).
+
+public static Movie[] getPG(Movie[] mov) {
+ Movie[] pgMov = new Movie[mov.length];
+ int newArrayIndex = 0;
+ for (int i = 0; i < mov.length; i++) {
+ if (mov[i].rating.equals(“PG”)) {
+ pgMov[newArrayIndex] = mov[i];
+ newArrayIndex++;
+ }
+ }
+ return pgMov;
+}
+
+
+
+
+2).
+Circle - Class
+Convert the UML diagram to Typescript class. - use number for double
+
+
+let pi=3.1412;
+class circle{
+    constructor(radius,color){
+        this.radius=radius;
+        this.color=color;
+        }
+        getradius(){
+        return this.radius;
+        }
+        getcolor(){
+            return this.color;
+            
+        }
+        getarea(){
+          return pi*this.radius*this.radius;
+        }
+        getcircumference(){
+            return 2*pi*this.radius;
+        }
+}
+let a=new circle(1.0,"red");
+console.log(a.getradius())
+console.log(a.getcolor())
+console.log(a.getarea())
+console.log(a.getcircumference())
+
+3).
+Write a “person” class to hold all the details.
+ class person{
+ constructor(name,email,DOB,age,gender,address,qualification,state,nationality)
+{
+this.name=name;
+this.email=email;
+this.DOB=DOB;
+this.age=age;
+this.gender=gender;
+this.address=address;
+this.qualifIcation=qualification;
+this.state=state;
+this.nationality=nationality;
+}
+}
+let s1=new Person("gv","gv@gmail.com","22-02-2001","Female","No.5 xyz street,chennai","B.E-IT","Tamil Nadu",Indian");
+console.log(s1.qualification);
+
+4)write a class to calculate uber price.
+
+let price=50;
+class uberprice{
+    constructor(kilometer){
+        this.kilometer=kilometer;
+    }
+    getuberprice(){
+        return this.kilometer*price;
+    }
+}
+let a=new uberpr(10);
+console.log(a.getuberprice()+" Rs")
